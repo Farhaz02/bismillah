@@ -1,0 +1,72 @@
+@media (min-width: 320px) and (max-width: 575.98px){
+.container{
+width: 320px;
+margin: 0 auto;
+}
+#product .main .item{
+width: 48%;
+display: flex;
+flex-wrap: wrap;
+}
+#product .main{
+/* display: block; */
+}
+#product .main .item .icon{
+font-size: 14px;
+margin-left: -20px;
+}
+#product .main .item:hover .icon{
+margin-top: -40px;
+}
+body{
+line-height: 1.8;
+font-size: 14px;
+color: #555;
+}
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+.container{
+width: 576px;
+margin: 0 auto;
+}
+#product .main .item{
+width: 48%;
+display: flex;
+flex-wrap: wrap;
+margin-top: 10px;
+}
+#product .main .item .icon{
+    font-size: 18px;
+    margin-left: 20px;
+    }
+    #product .main .item:hover .icon{
+    margin-top: 40px;
+    }
+  
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+.container{
+width: 769px;
+margin: 0 auto;
+}
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+.container{
+width: 993px;
+margin: 0 auto;
+}
+}
+
+
+@media (min-width: 280px) and (max-width: 319px){
+.container{
+width: 280px;
+margin: 0 auto;
+}
+#product .main .item{
+margin: auto;
+}
+}
