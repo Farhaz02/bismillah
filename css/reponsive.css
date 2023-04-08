@@ -7,16 +7,23 @@ margin: 0 auto;
 width: 48%;
 display: flex;
 flex-wrap: wrap;
+overflow: hidden;
 }
 #product .main{
 /* display: block; */
 }
 #product .main .item .icon{
 font-size: 14px;
-margin-left: -20px;
+margin-left: -1px;
+z-index: -1;
+/* background-color: transparent; */
 }
 #product .main .item:hover .icon{
 margin-top: -40px;
+z-index: 1;
+}
+#product .main .item .details .price .new-price p{
+font-size: 13px;
 }
 body{
 line-height: 1.8;
@@ -35,10 +42,12 @@ width: 48%;
 display: flex;
 flex-wrap: wrap;
 margin-top: 10px;
+overflow: hidden;
 }
 #product .main .item .icon{
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 34px;
+    left: -45px;
     }
     #product .main .item:hover .icon{
     margin-top: 40px;
@@ -51,6 +60,13 @@ margin-top: 10px;
 width: 769px;
 margin: 0 auto;
 }
+#product .main .item .icon {
+   margin-left: 0px;
+   background-color: transparent;
+}
+/* #product .main .item{
+overflow: hidden;
+} */
 }
 
 @media (min-width: 993px) and (max-width: 1200px){
@@ -58,6 +74,25 @@ margin: 0 auto;
 width: 993px;
 margin: 0 auto;
 }
+#product .main .item .icon {
+margin-left: 0px;
+ }
+ #product .main .item{
+overflow: hidden;
+ }
+}
+
+@media (min-width: 1201px) and (max-width: 1320px){
+    .container{
+        width: 1201px;
+        margin: 0 auto;
+        }
+        #product .main .item .icon {
+        margin-left: 0px;
+         }
+         #product .main .item{
+        overflow: hidden;
+         }
 }
 
 
@@ -68,5 +103,9 @@ margin: 0 auto;
 }
 #product .main .item{
 margin: auto;
+overflow: hidden;
 }
+#product .main .item .icon {
+    margin-left: 0px;
+ }
 }

@@ -44,13 +44,14 @@ position: relative;
 transition: .4s;
 border-radius: 5px;
 margin-bottom: 20px;
+overflow: hidden;
 }
 #product .main .item:hover{
 border: 1px solid blue;
 }
-#product .main .item::after{
+#product .main .item .off{
 position: absolute;
-content: '150 tk off';
+/* content: '150 tk off'; */
 display: flex;
 align-items: center;
 color: #ffffff;
@@ -72,7 +73,11 @@ font-size: 20px;
 padding: 0 15px;
 position: absolute;
 top: 50%;
-left: 0;
+left: -10px;
+height: 30px;
+width: 100%;
+margin: auto;
+background-color: #ffffff;
 }
 #product .main .item .icon a{
 color: gray;
@@ -85,11 +90,30 @@ opacity: 0;
 padding: 15px;
 transition: .4s;
 }
+#product .main .item .details .price .new-price p{
+font-size: 18px;
+font-weight: 700;
+color: blue;
+}
+#product .main .item .details .price .old-price p{
+position: relative;
+opacity: .6;
+margin-left: 10px;
+}
+#product .main .item .details .price .old-price p::before{
+position: absolute;
+content: '';
+height: 3px;
+width: 100%;
+top: 45%;
+left: 0;
+background-color: black;
+}
 #product .main .item .details:hover a{
 color: blue;
 }
 #product .main .item .details a{
-font-size: 15px;
+font-size: 12px;
 font-weight: 700;
 transition: all 0.3s ease;
 line-height: 21px;
